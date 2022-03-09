@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css"/>
+  <title>Test</title>
+</head>
+<body>
+  <!-- test out traditional event handlers -->
+  <div class="container">
+    <div>
+      <h2>Hello there!</h2>
+      <p>Let's be friend</p>
+      <button class="btn btn-primary" id="test1" onclick="hey()">Click here</button>
+    </div>
+    <!-- <input id="test2" type="text" value="what's your name" onchange="show()"> -->
+    <textarea id="test2" type="text" value="what's your name" ></textarea>
+  </div>
+</body>
+
+
+<script src="assets/jquery/jquery.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script>
+     document.getElementById('test2').addEventListener('keydown', ()=>{
+       alert('Finnese')
+     })
+
+    //$('#test2').keydown(function (e) { 
+    //e.preventDefault();
+      //alert('Finnese')
+    
+    //});
+
+    const hey=()=>{
+      alert("From HTML")
+    }
+
+ 
+</script>
+</html>
